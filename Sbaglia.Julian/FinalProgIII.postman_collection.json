@@ -1,0 +1,255 @@
+{
+	"info": {
+		"_postman_id": "400df12a-e94d-4c07-bb26-51e826631369",
+		"name": "FinalProgIII",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Punto_1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "mail",
+							"value": "julia@mail.com",
+							"type": "text"
+						},
+						{
+							"key": "sexo",
+							"value": "femenino",
+							"type": "text"
+						},
+						{
+							"key": "clave",
+							"value": "1234",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}",
+					"host": [
+						"{{url}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Punto_2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "precio",
+							"value": "30",
+							"type": "text"
+						},
+						{
+							"key": "nombre",
+							"value": "naranjita",
+							"type": "text"
+						},
+						{
+							"key": "foto",
+							"type": "file",
+							"src": "/C:/Users/Usuario/Pictures/LORENA/Hortalizas-e1543613569254.jpg"
+						},
+						{
+							"key": "tipo",
+							"value": "zanahoria",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}hortalizas",
+					"host": [
+						"{{url}}hortalizas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Punto_3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}",
+					"host": [
+						"{{url}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Punto_4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}hortalizas/tipo/zanahoria",
+					"host": [
+						"{{url}}hortalizas"
+					],
+					"path": [
+						"tipo",
+						"zanahoria"
+					],
+					"query": [
+						{
+							"key": "tipo",
+							"value": "morron",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Punto_5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}hortalizas/id/2",
+					"host": [
+						"{{url}}hortalizas"
+					],
+					"path": [
+						"id",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Punto_6",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}hortalizas/3",
+					"host": [
+						"{{url}}hortalizas"
+					],
+					"path": [
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Punto_7",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "idHortaliza",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "idEmpleado",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "cantidad",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "foto",
+							"type": "file",
+							"src": "/C:/Users/Usuario/Downloads/descarga (1).jfif"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}ventas",
+					"host": [
+						"{{url}}ventas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Punto_8",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "precio",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "nombre",
+							"value": "rojo",
+							"type": "text"
+						},
+						{
+							"key": "foto",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "tipo",
+							"value": "morron",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}hortalizas/update/1",
+					"host": [
+						"{{url}}hortalizas"
+					],
+					"path": [
+						"update",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Punto_11",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}pdf/4",
+					"host": [
+						"{{url}}pdf"
+					],
+					"path": [
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

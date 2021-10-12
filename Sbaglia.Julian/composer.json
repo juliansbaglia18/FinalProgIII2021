@@ -1,0 +1,22 @@
+{
+    "name": "sbaglia/final",
+    "description": "Practica para dar final Prog III",
+    "type": "project",
+    "require": {
+        "illuminate/database": "5.1.8",
+        "illuminate/events": "5.1.8",
+        "firebase/php-jwt": "dev-master",
+        "slim/slim": "4.*",
+        "slim/psr7": "dev-master",
+        "mpdf/mpdf": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Clases\\":"app",
+            "App\\":"src",
+            "Config\\":"config"
+        }
+    },
+    "license": "MIT",
+    "minimum-stability": "dev"
+}
